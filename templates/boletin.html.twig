@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	<meta property="og:title" content="{{titulo}}" />
+	<title>{{titulo}}</title>
+
+	
+	<style type="text/css">
+		body {
+			width: 100% !important;
+		}
+		
+		body {
+			-webkit-text-size-adjust: none;
+			margin: 0;
+			padding: 0;
+		}
+		table td {
+			border-collapse: collapse;
+		}
+		img.fullWidth {
+			width: 100%;
+			height: auto;
+		}
+		
+		a,a:link,a:visited,a.yshortcuts {
+			color: #5D9C7E;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		#outlook a {
+			padding: 0;
+		}
+
+		.contenido{
+			text-align: left;
+		}
+		.titulo{
+			text-align: left;
+		}
+		.info{
+			text-align: left;
+		}
+
+	</style>
+
+</head>
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+<center>
+	<table border="0" cellpadding="10" cellspacing="0" height="100%" width="100%" id="main">
+
+		<tr>
+			<td align="center" valign="top">
+
+				<table border="0" cellpadding="10" cellspacing="0" width="600" id="container">
+				
+
+					<tr>
+						<td align="center" valign="top">
+							<table border="0" cellpadding="0" cellspacing="0" width="600"class="header">
+
+								<tr>
+									<td class="contenido">
+										<img src="{{encabezado}}" id="headerImage" title="{{titulo}}" alt="{{titulo}}" />
+									</td>
+								</tr>
+
+							</table>
+						</td>
+					</tr>
+
+
+					<!-- empieza secciones -->
+				   
+					<tr>
+						<td align="center" valign="top">
+
+							<table border="0" cellpadding="0" cellspacing="0" width="600"id="secciones">
+								
+								{% for seccion in secciones %}					
+									{% block seccion %}
+										{% include 'seccion.html.twig' %}
+									{% endblock %}
+								{% endfor %}
+
+							</table> 
+						</td>
+					</tr>
+
+					<!-- <footer>{#pie#}</footer> -->
+					<!-- termina contenido -->
+
+				
+				</table>
+
+			</td>
+		</tr>
+	</table>
+
+</center>
+</body>
+
+</html>

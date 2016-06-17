@@ -1,0 +1,30 @@
+<tr>
+	<td align="center" valign="top">
+
+		<table border="0" cellpadding="0" cellspacing="0" width="600" class="bloque" id="{{bloque.titulo|slug}}">
+
+			
+			<h4 class="titulo">
+				<a target="_BLANK" href="{{bloque.link}}">
+					{{bloque.titulo}}
+				</a>
+			</h4>
+		
+
+			{% if bloque.contenido %}
+				<div class="contenido">
+					{{ bloque.contenido|raw}}
+				</div>
+			{% endif %}
+
+
+			{% if bloque.info %}
+				<div class="info">
+					{{bloque.info}}
+				</div>
+			{% endif %}
+	
+		</table> 
+	</td>
+</tr>
+
