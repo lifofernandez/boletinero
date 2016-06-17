@@ -1,27 +1,33 @@
 <tr>
 	<td align="center" valign="top">
 
-		<table border="0" cellpadding="0" cellspacing="0" width="600" class="bloque" id="{{bloque.titulo|slug}}">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" class="bloque" id="{{bloque.titulo|slug}}">
 
-			
-			<h4 class="titulo">
-				<a target="_BLANK" href="{{bloque.link}}">
-					{{bloque.titulo}}
-				</a>
-			</h4>
-		
+			<tr>
+				<td class="titulo">
+					<h4>
+						<a target="_BLANK" href="{{bloque.link}}">
+							{{bloque.titulo}}
+						</a>
+					</h4>
+				</td>
+			</tr>
 
 			{% if bloque.contenido %}
-				<div class="contenido">
-					{{ bloque.contenido|raw}}
-				</div>
+				<tr>
+					<td class="contenido">
+						{{ bloque.contenido|raw }}
+					</td>
+				</tr>
 			{% endif %}
 
 
 			{% if bloque.info %}
-				<div class="info">
-					{{bloque.info}}
-				</div>
+				<tr>
+					<td class="info">
+						{{bloque.info}}
+					</td>
+				</tr>
 			{% endif %}
 	
 		</table> 
