@@ -29,19 +29,19 @@ require_once 'vendor/autoload.php';
 
 $loader = new Twig_Loader_Filesystem('templates');
 $twig = new Twig_Environment($loader);
-$twig->addExtension(new Twig_Extensions_Extension_Intl());
+//$twig->addExtension(new Twig_Extensions_Extension_Intl());
 
-// Custom Filter 'slug' 
+// Custom Filter 'slug'
 $filter = new Twig_SimpleFilter('slug', function ($string) {
-	$string = transliterator_transliterate("Any-Latin; NFD; [:Nonspacing Mark:] 
-		Remove; NFC; [:Punctuation:] Remove; Lower();", $string);
-    $string = preg_replace('/[-\s]+/', '-', $string);
-    $string = trim($string, '-');
-    return $string;
+	// $string = transliterator_transliterate("Any-Latin; NFD; [:Nonspacing Mark:]
+	// Remove; NFC; [:Punctuation:] Remove; Lower();", $string);
+	// $string = preg_replace('/[-\s]+/', '-', $string);
+	// $string = trim($string, '-');
+	// return $string;
 });
 $twig->addFilter($filter);
 
-// Templates 
+// Templates
 $index = $twig->loadTemplate('boletin.html.twig');
 
 
@@ -49,8 +49,9 @@ $index = $twig->loadTemplate('boletin.html.twig');
 //-----------------------------------------------------
 // Cargar Feeds .json
 //-----------------------------------------------------
+$curret_iyu = 'boletin_2016-06';
 
-$contenidosJson = file_get_contents("contenidos/boletin_2016-06.json");
+$contenidosJson = file_get_contents("contenidos/".$curret_iyu.".json");
 
 
 $contenidos = json_decode($contenidosJson,true); // 'true' devuelve  array
@@ -67,7 +68,7 @@ $output = $index->render($contenidos);
 
 
 
-$file = 'output.html';
+$file = $curret_iyu.'.html';
 
 // Write the contents back to the file
 file_put_contents($file, $output);

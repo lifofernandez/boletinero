@@ -1,7 +1,7 @@
 <tr>
 	<td align="center" valign="top">
 
-		<table border="0" cellpadding="0" cellspacing="0" width="100%" class="bloque" id="{{bloque.titulo|slug}}">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" class="bloque">
 
 			<tr>
 				<td class="titulo">
@@ -25,12 +25,12 @@
 			{% if bloque.info %}
 				<tr>
 					<td class="info">
-						{{bloque.info}}
+						{{bloque.info|raw}}
 					</td>
 				</tr>
 			{% endif %}
-	
-		</table> 
+
+		</table>
 	</td>
 </tr>
 

@@ -1,7 +1,7 @@
 <tr>
 	<td align="center" valign="top">
 
-		<table border="0" cellpadding="20" cellspacing="0" width="600" class="seccion" >
+		<table border="0" cellpadding="10" cellspacing="0" width="600" class="seccion" >
 			<tr>
 				<td  class="titulo">
 					<h3>{{seccion.titulo}}</h3>
@@ -14,7 +14,7 @@
 						{{seccion.contenido|raw}}
 					</td>
 				</tr>
-			
+
 			{% endif %}
 
 
@@ -29,14 +29,14 @@
 			{% if seccion.info %}
 				<tr>
 					<td class="info">
-						{{bloque.info}}
+						{{seccion.info|raw}}
 					</td>
 				</tr>
 			{% endif %}
 
-		
 
-		</table> 
+
+		</table>
 	</td>
 </tr>
 
