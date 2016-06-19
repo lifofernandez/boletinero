@@ -4,6 +4,7 @@
 // Sistema de templates para el Radar
 //======================================================================
 
+$current = 'boletin_2016-06'; # Nobre para los archivos de salida..
 
 //-----------------------------------------------------
 // Importar librerias
@@ -49,7 +50,6 @@ $index = $twig->loadTemplate('boletin.html.twig');
 // Cargar Feeds .json
 //-----------------------------------------------------
 
-$current = 'boletin_2016-06';
 
 $contenidosJson = file_get_contents("contenidos/".$current.".json");
 $contenidos = json_decode($contenidosJson,true); // 'true' devuelve  array
