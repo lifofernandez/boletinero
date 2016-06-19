@@ -5,224 +5,75 @@
 	<meta property="og:title" content="{{titulo}}" />
 	<title>{{titulo}}</title>
 
-
-	<style type="text/css">
-
-
-		/* overrides/resets */
-
-		body {
-			width: 100%;
-			-webkit-text-size-adjust: none;
-			margin: 0;
-			padding: 0;
-			font-family: Arial, Helvetica, sans-serif;
-			font-size: 11px;
-		}
-		table td {
-			border-collapse: collapse;
-		}
-		img {
-			border: 0;
-			height: auto;
-			line-height: 100%;
-			outline: none;
-			text-decoration: none;
-		}
-
-		.header img {
-			width: 100%;
-			height: auto;
-		}
-
-
-		a,
-		a:link,
-		a:visited,
-		a.yshortcuts,
-		.link{
-			color: #5D9C7E !important;
-			font-weight: bold !important;
-			text-decoration: none !important;
-		}
-		#outlook a {
-			padding: 0;
-		}
-
-
-
-		/* generales */
-
-		.main {
-				height: 100%;
-				margin: 0;
-				padding: 0;
-				width: 100%;
-		}
-
-		body,.main {
-				background-color: #e1e4e1;
-		}
-
-		.container {
-				background-color: #D3D1C0;
-		}
-
-		.contenido{
-			text-align: left;
-			color: #444A4F;
-			font-size: 11px;
-			line-height: 130%;
-			padding: 10px 0;
-		}
-		.contenido h5{
-			font-size: 12px;
-			margin: 0px 0px 5px;
-		}
-		.titulo{
-			text-align: left;
-		}
-		.info{
-			text-align: left;
-			color: #444A4F;
-			font-size: 11px;
-			line-height: 130%;
-
-		}
-
-		/* seccion */
-		.seccion{
-
-		}
-		.seccion .titulo{
-			background-color: #5D9C7E;
-			padding: 20px 10px;
-		}
-		.seccion .titulo h3{
-			color: #004840;
-			text-transform: uppercase;
-			margin: 0px;
-			font-size: 30px;
-		}
-		..seccion .titulo h3 a{
-			color: #004840;
-		}
-		.seccion .info{
-			background: #E1E4E1;
-			padding: 3px;
-		}
-
-		/* bloque */
-		.bloque {
-			padding: 10px 0;
-		}
-
-		.bloque .titulo{
-			background-color: transparent;
-			padding: 0px;
-		}
-		.bloque .titulo h4{
-			color: #5d9c7e;
-			text-transform: uppercase;
-			margin: 0px;
-			font-size: 18px;
-		}
-		.bloque .titulo h4 a{
-			color: #5d9c7e;
-		}
-		.bloque .info{
-			background: #E1E4E1;
-			padding: 3px;
-		}
-
-
-		/* footer */
-
-		#footer{
-			background-color: #004840;
-			padding: 10px;
-		}
-
-
-		#footer .contenido{
-			color: #D3D1C0;
-			font-family: Arial;
-			font-size: 11px;
-			line-height: 130%;
-			text-align: left;
-		}
-		#footer #social,
-		#footer #subscripciones{
-			padding: 0px;
-		}
-	</style>
+	{% include 'style.css.twig' %}
 
 </head>
 
 <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+
 <center>
-	<table border="0" cellpadding="10" cellspacing="0" height="100%" width="100%" class="main">
 
-		<tr>
-			<td align="center" valign="top">
+<table border="0" cellpadding="10" cellspacing="0" height="100%" width="100%"
+	class="main">
 
-				<table border="0" cellpadding="10" cellspacing="0" width="600" class="container">
+	<tr>
+		<td align="center" valign="top">
+			<table border="0" cellpadding="10" cellspacing="0" width="600"
+				class="container">
 
+				<!-- header -->
+				<tr>
+					<td align="center" valign="top">
+						<table border="0" cellpadding="0" cellspacing="0" width="600"
+							class="header">
 
-					<tr>
-						<td align="center" valign="top">
-							<table border="0" cellpadding="0" cellspacing="0" width="600" class="header">
+							<tr>
+								<td class="banner">
+									<img src="{{encabezado}}" id="headerImage"
+										title="{{titulo}}" alt="{{titulo}}" />
+								</td>
+							</tr>
 
-								<tr>
-									<td class="banner">
-										<img src="{{encabezado}}" id="headerImage" title="{{titulo}}" alt="{{titulo}}" />
-									</td>
-								</tr>
-
-							</table>
-						</td>
-					</tr>
-
-
-					<!-- empieza secciones -->
-
-					<tr>
-						<td align="center" valign="top">
-
-							<table border="0" cellpadding="0" cellspacing="0" width="600" id="secciones">
-
-								{% for seccion in secciones %}
-									{% block seccion %}
-										{% include 'seccion.html.twig' %}
-									{% endblock %}
-								{% endfor %}
-
-							</table>
-						</td>
-					</tr>
-
-					<!-- termina contenido -->
-
-					<!-- <footer>{#pie#}</footer> -->
-
-					<tr>
-						<td align="center" valign="top">
-
-							<table border="0" cellpadding="0" cellspacing="0" width="600" id="footer">
-
-									{% block footer %}
-										{% include 'footer.html.twig' %}
-									{% endblock %}
-							</table>
-						</td>
-					</tr>
+						</table>
+					</td>
+				</tr>
 
 
-				</table>
+				<!-- secciones -->
+				<tr>
+					<td align="center" valign="top">
+						<table border="0" cellpadding="0" cellspacing="0" width="600"
+							id="secciones">
 
-			</td>
-		</tr>
-	</table>
+							{% for seccion in secciones %}
+								{% block seccion %}
+									{% include 'seccion.html.twig' %}
+								{% endblock %}
+							{% endfor %}
+
+						</table>
+					</td>
+				</tr>
+
+				<!--  footer -->
+				<tr>
+					<td align="center" valign="top">
+						<table border="0" cellpadding="0" cellspacing="0" width="600"
+							id="footer">
+
+							{% block footer %}
+								{% include 'footer.html.twig' %}
+							{% endblock %}
+
+						</table>
+					</td>
+				</tr>
+
+			</table>
+
+		</td>
+	</tr>
+</table>
 
 </center>
 </body>
