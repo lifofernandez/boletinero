@@ -22,7 +22,6 @@ require_once 'vendor/autoload.php';
 */
 
 
-
 //-----------------------------------------------------
 // Twig
 //-----------------------------------------------------
@@ -45,15 +44,12 @@ $twig = new Twig_Environment($loader);
 $index = $twig->loadTemplate('boletin.html.twig');
 
 
-
 //-----------------------------------------------------
 // Cargar Feeds .json
 //-----------------------------------------------------
 
-
 $contenidosJson = file_get_contents("contenidos/".$current.".json");
 $contenidos = json_decode($contenidosJson,true); // 'true' devuelve  array
-
 
 
 //-----------------------------------------------------
@@ -64,7 +60,5 @@ $output = $index->render($contenidos);
 
 $file = $current.'.html';
 file_put_contents($file, $output);
-
-
 
 ?>
