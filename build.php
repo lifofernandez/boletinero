@@ -6,20 +6,14 @@
 
 $current = 'boletin_2016-06'; # Nobre para los archivos de salida...
 
+
 //-----------------------------------------------------
-// Importar librerias
+// Importar dependencias
 //-----------------------------------------------------
 
-// composer require twig/twig:~1.0
-// composer require twig/extensions
 require_once 'vendor/autoload.php';
-
-
-/*
-* Esto va si se isntala TWIG a mano
-* require_once '../vendor/Twig-1.24.0/lib/Twig/Autoloader.php';
-* Twig_Autoloader::register();
-*/
+use Adamlc\Premailer\Command;
+use Adamlc\Premailer\Email;
 
 
 //-----------------------------------------------------
@@ -28,7 +22,8 @@ require_once 'vendor/autoload.php';
 
 $loader = new Twig_Loader_Filesystem('templates');
 $twig = new Twig_Environment($loader);
-//$twig->addExtension(new Twig_Extensions_Extension_Intl());
+
+// $twig->addExtension(new Twig_Extensions_Extension_Intl());
 
 // // Custom Filter 'slug'
 
@@ -47,20 +42,61 @@ $index = $twig->loadTemplate('boletin.html.twig');
 
 
 //-----------------------------------------------------
-// Cargar Feeds .json
+// Cargar contenidos (.json)
 //-----------------------------------------------------
 
-$contenidosJson = file_get_contents("contenidos/".$current.".json");
-$contenidos = json_decode($contenidosJson,true); // 'true' devuelve  array
+
+$inputFile = "contenidos/".$current.".json";
+$contenidosJson = file_get_contents($inputFile);
+$contenidos = json_decode($contenidosJson,true);
 
 
 //-----------------------------------------------------
-// Render
+// Render 
 //-----------------------------------------------------
 
-$output = $index->render($contenidos);
+$outputRaw = $index->render($contenidos);
+echo "Construyo arbol HTML a partir de ".$current.".json\n";
+$output = $outputRaw;
 
-$file = $current.'.html';
-file_put_contents($file, $output);
+
+//-----------------------------------------------------
+// Premailer (packagist.org/packages/adamlc/premailer-cli-wrapper)
+// PHP CLI wrapper for Premailer - tool to inline all of your CSS.
+//
+// $ sudo gem install premailer
+//-----------------------------------------------------
+
+
+if (isset($argv[1]) && ($argv[1] == 'inline' || $argv[1] == 'i')){
+
+	// Path to Premailer Binary
+	$premailer = new Command('~/.gem/ruby/2.3.0/gems/premailer-1.8.6/bin/premailer');
+
+	// Create a new email instance, passing the Command instance
+	$email = new Email($premailer);
+
+	// Set the body of the Email
+	$email->setBody($outputRaw);
+
+	// Get the parsed body of the email
+	$mailHtml = $email->getHtml();
+	$mailText = $email->getText();
+
+	$output = $mailHtml;
+
+	//echo "$mailText"."\n";
+	echo "CSS Inline !!!\n";
+}
+
+//-----------------------------------------------------
+// Escribir Archivo
+//-----------------------------------------------------
+
+$outputfile = $current.'.html';
+file_put_contents($outputfile, $output);
+
+echo "Escribo ".$outputfile."\n";
+
 
 ?>
