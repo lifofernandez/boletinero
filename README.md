@@ -1,15 +1,15 @@
-# boletinero
+# Boletinero
 script PHP/twig para hacer los boletines de ATAM
 
-## install twig
+## Instalar dependencias
 
 ```bash
 $ composer install
 ```
 
-Esto va si se isntala TWIG a mano
+Si se instala TWIG "a mano" (sin Composer) incluir "Autoloader"...
 
 ```php
-require_once 'vendor/Twig-1.24.0/lib/Twig/Autoloader.php';
+require_once '/path/to/lib/Twig/Autoloader.php';
 Twig_Autoloader::register();
 ```
