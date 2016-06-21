@@ -4,7 +4,7 @@
 // Sistema de templates para el Radar
 //======================================================================
 
-$current = 'boletin_2016-06'; # Nobre para los archivos de salida..
+$current = 'boletin_2016-06'; # Nobre para los archivos de salida...
 
 //-----------------------------------------------------
 // Importar librerias
@@ -16,7 +16,7 @@ require_once 'vendor/autoload.php';
 
 
 /*
-* Esto va si se isntala de a mano
+* Esto va si se isntala TWIG a mano
 * require_once '../vendor/Twig-1.24.0/lib/Twig/Autoloader.php';
 * Twig_Autoloader::register();
 */
@@ -31,6 +31,7 @@ $twig = new Twig_Environment($loader);
 //$twig->addExtension(new Twig_Extensions_Extension_Intl());
 
 // // Custom Filter 'slug'
+
 // $filter = new Twig_SimpleFilter('slug', function ($string) {
 // 	// $string = transliterator_transliterate("Any-Latin; NFD; [:Nonspacing Mark:]
 // 	// Remove; NFC; [:Punctuation:] Remove; Lower();", $string);
@@ -38,6 +39,7 @@ $twig = new Twig_Environment($loader);
 // 	// $string = trim($string, '-');
 // 	// return $string;
 // });
+
 // $twig->addFilter($filter);
 
 // Templates
