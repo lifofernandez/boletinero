@@ -15,6 +15,8 @@ require_once 'vendor/autoload.php';
 
 use Adamlc\Premailer\Command;
 use Adamlc\Premailer\Email;
+use Symfony\Component\Yaml\Yaml;
+
 
 
 //-----------------------------------------------------
@@ -46,16 +48,19 @@ $index = $twig->loadTemplate('boletin.html.twig');
 // Cargar contenidos (.json)
 //-----------------------------------------------------
 
-$inputFile = "contenidos/".$current.".json";
-$contenidosJson = file_get_contents($inputFile);
-$contenidos = json_decode($contenidosJson,true);
+$inputFile = "contenidos/".$current.".yml";
 
+// $contenidosJson = file_get_contents($inputFile);
+// $contenidos = json_decode($contenidosJson,true);
+
+$contenidosYaml = Yaml::parse(file_get_contents($inputFile));
+var_dump($contenidosYaml);
 
 //-----------------------------------------------------
 // Render 
 //-----------------------------------------------------
 
-$outputRaw = $index->render($contenidos);
+$outputRaw = $index->render($contenidosYaml);
 echo "Construyo arbol HTML a partir de ".$current.".json\n";
 $output = $outputRaw;
 
@@ -92,9 +97,9 @@ if (isset($argv[1]) && ($argv[1] == 'inline' || $argv[1] == 'i')){
 //-----------------------------------------------------
 
 $outputFile = $current.'.html';
-file_put_contents($outputfile, $output);
+file_put_contents($outputFile, $output);
 
-echo "Escribo ".$outputfile."\n";
+echo "Escribo ".$outputFile."\n";
 
 
 ?>
