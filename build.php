@@ -12,6 +12,7 @@ $current = 'boletin_2016-06'; # Nobre para los archivos de salida...
 //-----------------------------------------------------
 
 require_once 'vendor/autoload.php';
+
 use Adamlc\Premailer\Command;
 use Adamlc\Premailer\Email;
 
@@ -45,7 +46,6 @@ $index = $twig->loadTemplate('boletin.html.twig');
 // Cargar contenidos (.json)
 //-----------------------------------------------------
 
-
 $inputFile = "contenidos/".$current.".json";
 $contenidosJson = file_get_contents($inputFile);
 $contenidos = json_decode($contenidosJson,true);
@@ -62,9 +62,7 @@ $output = $outputRaw;
 
 //-----------------------------------------------------
 // Premailer (packagist.org/packages/adamlc/premailer-cli-wrapper)
-// PHP CLI wrapper for Premailer - tool to inline all of your CSS.
-//
-// $ sudo gem install premailer
+// 
 //-----------------------------------------------------
 
 
@@ -93,7 +91,7 @@ if (isset($argv[1]) && ($argv[1] == 'inline' || $argv[1] == 'i')){
 // Escribir Archivo
 //-----------------------------------------------------
 
-$outputfile = $current.'.html';
+$outputFile = $current.'.html';
 file_put_contents($outputfile, $output);
 
 echo "Escribo ".$outputfile."\n";
