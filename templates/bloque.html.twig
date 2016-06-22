@@ -17,7 +17,7 @@
 			{% if bloque.contenido %}
 				<tr>
 					<td class="contenido">
-						{{ bloque.contenido|raw }}
+						{{bloque.contenido|markdown}}
 					</td>
 				</tr>
 			{% endif %}
@@ -26,7 +26,7 @@
 			{% if bloque.info %}
 				<tr>
 					<td class="info">
-						{{bloque.info|raw}}
+						{{bloque.info|markdown}}
 					</td>
 				</tr>
 			{% endif %}

@@ -17,7 +17,8 @@ use Adamlc\Premailer\Command;
 use Adamlc\Premailer\Email;
 use Symfony\Component\Yaml\Yaml;
 
-
+use Aptoma\Twig\Extension\MarkdownExtension;
+use Aptoma\Twig\Extension\MarkdownEngine;
 
 //-----------------------------------------------------
 // Twig
@@ -25,6 +26,14 @@ use Symfony\Component\Yaml\Yaml;
 
 $loader = new Twig_Loader_Filesystem('templates');
 $twig = new Twig_Environment($loader);
+
+
+
+
+$engine = new MarkdownEngine\MichelfMarkdownEngine();
+
+$twig->addExtension(new MarkdownExtension($engine));
+
 
 // $twig->addExtension(new Twig_Extensions_Extension_Intl());
 

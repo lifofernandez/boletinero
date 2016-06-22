@@ -13,7 +13,7 @@
 			{% if seccion.contenido %}
 				<tr>
 					<td class="contenido">
-						{{seccion.contenido|raw}}
+						{{seccion.contenido|markdown}}
 					</td>
 				</tr>
 			{% endif %}
@@ -30,7 +30,7 @@
 			{% if seccion.info %}
 				<tr>
 					<td class="info">
-						{{seccion.info|raw}}
+						{{seccion.info|markdown}}
 					</td>
 				</tr>
 			{% endif %}
