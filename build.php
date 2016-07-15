@@ -4,7 +4,7 @@
 // Sistema de templates para el Radar
 //======================================================================
 
-$current = 'boletin_2016-06'; # Nobre para los archivos de salida...
+$current = 'boletin_2016-07'; # Nobre para los archivos de salida...
 
 
 //-----------------------------------------------------
@@ -35,19 +35,20 @@ $engine = new MarkdownEngine\MichelfMarkdownEngine();
 $twig->addExtension(new MarkdownExtension($engine));
 
 
-// $twig->addExtension(new Twig_Extensions_Extension_Intl());
+$twig->addExtension(new Twig_Extensions_Extension_Intl());
 
-// // Custom Filter 'slug'
+// Custom Filter 'slug'
 
-// $filter = new Twig_SimpleFilter('slug', function ($string) {
-// 	// $string = transliterator_transliterate("Any-Latin; NFD; [:Nonspacing Mark:]
-// 	// Remove; NFC; [:Punctuation:] Remove; Lower();", $string);
-// 	// $string = preg_replace('/[-\s]+/', '-', $string);
-// 	// $string = trim($string, '-');
-// 	// return $string;
-// });
+$filter = new Twig_SimpleFilter('slug', function ($string) {
 
-// $twig->addFilter($filter);
+	$string = transliterator_transliterate("Any-Latin; NFD; [:Nonspacing Mark:]
+	Remove; NFC; [:Punctuation:] Remove; Lower();", $string);
+	$string = preg_replace('/[-\s]+/', '-', $string);
+	$string = trim($string, '-');
+	return $string;
+});
+
+$twig->addFilter($filter);
 
 // Templates
 $index = $twig->loadTemplate('boletin.html.twig');
@@ -63,14 +64,14 @@ $inputFile = "contenidos/".$current.".yml";
 // $contenidos = json_decode($contenidosJson,true);
 
 $contenidosYaml = Yaml::parse(file_get_contents($inputFile));
-var_dump($contenidosYaml);
+// var_dump($contenidosYaml);
 
 //-----------------------------------------------------
 // Render 
 //-----------------------------------------------------
 
 $outputRaw = $index->render($contenidosYaml);
-echo "Construyo arbol HTML a partir de ".$current.".json\n";
+echo "Construyo arbol HTML a partir de ".$inputFile."\n";
 $output = $outputRaw;
 
 
