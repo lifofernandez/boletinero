@@ -4,39 +4,16 @@ banner: http://extension.atamvirtual.com.ar/assets/headers2016/HEADER_
 pie: 
 secciones: 
   - 
-    titulo: Institucional
-    bloques: 
-      - 
-        titulo: ""
-        link: http:// 
-        contenido: ""
-        info: ""    
-      - 
-        titulo: ""
-        link: http:// 
-        contenido: ""
-        info: ""    
-  - 
     titulo: Académica
     bloques: 
       - 
-        titulo: ""
-        link: http:// 
-        contenido: ""
-        info: ""    
-      - 
-        titulo: ""
-        link: http:// 
-        contenido: ""
-        info: ""    
+        titulo: "Sigue abierta la inscripción a la carrera de Artes Multimediales"
+        link: http://multimedia.una.edu.ar/noticias/6236-nueva-fecha-de-inscripcion-a-la-carrera 
+        contenido: "Hasta el 11 dei diciembre se encontrará abierta la inscripción a la carrera de Licenciatura en Artes Multimediales para el ciclo lectivo 2017.</br>Además, durante este período se ofrecerán jornadas introductorias en los turnos mañana (10 hs.), tarde (14 hs.) y noche (18 hs.) para despejar dudas de ingresantes y dialogar sobre las Artes Multimediales."
+        info: "http://multimedia.una.edu.ar/contenidos/2344-ingreso-2017"    
   - 
-    titulo: Extensión
+    titulo: "Extensión"
     bloques: 
-      - 
-        titulo: ""
-        link: http:// 
-        contenido: ""
-        info: ""    
       - 
         titulo: ""
         link: http:// 
