@@ -34,7 +34,7 @@ $engine = new MarkdownEngine\MichelfMarkdownEngine();
 
 $twig->addExtension(new MarkdownExtension($engine));
 
-
+/*
 $twig->addExtension(new Twig_Extensions_Extension_Intl());
 
 // Custom Filter 'slug'
@@ -49,6 +49,7 @@ $filter = new Twig_SimpleFilter('slug', function ($string) {
 });
 
 $twig->addFilter($filter);
+*/
 
 // Templates
 $index = $twig->loadTemplate('boletin.html.twig');
