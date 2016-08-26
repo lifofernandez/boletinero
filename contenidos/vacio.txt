@@ -1,0 +1,44 @@
+--- 
+titulo: ATAM / Boletín :
+banner: http://extension.atamvirtual.com.ar/assets/headers2016/HEADER_
+pie: 
+secciones: 
+  - 
+    titulo: Institucional
+    bloques: 
+      - 
+        titulo: ""
+        link: http:// 
+        contenido: ""
+        info: ""    
+      - 
+        titulo: ""
+        link: http:// 
+        contenido: ""
+        info: ""    
+  - 
+    titulo: Académica
+    bloques: 
+      - 
+        titulo: ""
+        link: http:// 
+        contenido: ""
+        info: ""    
+      - 
+        titulo: ""
+        link: http:// 
+        contenido: ""
+        info: ""    
+  - 
+    titulo: Extensión
+    bloques: 
+      - 
+        titulo: ""
+        link: http:// 
+        contenido: ""
+        info: ""    
+      - 
+        titulo: ""
+        link: http:// 
+        contenido: ""
+        info: ""    
