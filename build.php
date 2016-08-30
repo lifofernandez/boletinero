@@ -4,7 +4,7 @@
 // Sistema de templates para el Radar
 //======================================================================
 
-$current = 'boletin_2016-08'; # Nobre para los archivos de salida...
+$current = 'boletin_2016-09'; # Nobre para los archivos de salida...
 
 
 //-----------------------------------------------------
@@ -60,12 +60,8 @@ $index = $twig->loadTemplate('boletin.html.twig');
 //-----------------------------------------------------
 
 $inputFile = "contenidos/".$current.".yml";
-
-// $contenidosJson = file_get_contents($inputFile);
-// $contenidos = json_decode($contenidosJson,true);
-
 $contenidosYaml = Yaml::parse(file_get_contents($inputFile));
-// var_dump($contenidosYaml);
+
 
 //-----------------------------------------------------
 // Render 
@@ -80,7 +76,6 @@ $output = $outputRaw;
 // Premailer (packagist.org/packages/adamlc/premailer-cli-wrapper)
 // 
 //-----------------------------------------------------
-
 
 if (isset($argv[1]) && ($argv[1] == 'inline' || $argv[1] == 'i')){
 
