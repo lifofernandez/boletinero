@@ -81,7 +81,7 @@ if (isset($argv[1]) && ($argv[1] == 'inline' || $argv[1] == 'i')){
 
 	// Path to Premailer Binary
 	//$premailer = new Command('~/.gem/ruby/2.3.0/gems/premailer-1.8.6/bin/premailer');
-	$premailer = new Command('~/.gem/ruby/2.3.0/bin/premailer');
+	$premailer = new Command('/usr/local/bin/premailer');
 
 	// Create a new email instance, passing the Command instance
 	$email = new Email($premailer);
