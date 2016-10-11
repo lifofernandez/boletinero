@@ -4,7 +4,7 @@
 // Sistema de templates para el Radar
 //======================================================================
 
-$current = 'boletin_2016-09'; # Nobre para los archivos de salida...
+$current = 'boletin_2016-10'; # Nobre para los archivos de salida...
 
 
 //-----------------------------------------------------
