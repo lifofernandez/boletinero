@@ -6,8 +6,7 @@ secciones:
   - 
     titulo: Curso de Posgrado
     intro: |
-      Se encuentra abierta la inscripción para los cursos de posgrado que dictará el Área de Artes Multimediales.   
-      **+ info:** [http://multimedia.una.edu.ar/posgrados/cursos/](http://multimedia.una.edu.ar/posgrados/cursos/)
+      Se encuentra abierta la inscripción: 
     info: |
       ###Informes   
       Coordianación de Investigación y Posgrado | lunes a viernes 10 a 15hs   
@@ -15,7 +14,7 @@ secciones:
     bloques: 
       - 
         titulo: Dibujo en escena
-        link: http://multimedia.una.edu.ar/posgrados/cursos/3063-dibujo-en-escena
+        link: https://multimedia.una.edu.ar/cursos/dibujo-en-escena_18273
         contenido: | 
           **Docentes:** Marcela Rapallo
 
@@ -40,6 +39,9 @@ secciones:
           Ciudad Autónoma de Buenos Aires, República Argentina
 
           **Horario del curso:** Sábados de 13 a 17hs
+          
+         
+          **Más informacion:** [https://multimedia.una.edu.ar/cursos/dibujo-en-escena_18273](https://multimedia.una.edu.ar/cursos/dibujo-en-escena_18273)
         info: | 
           **Inicio:** Sábado 09 de septiembre | 
           **Duración:** 8 clases 
