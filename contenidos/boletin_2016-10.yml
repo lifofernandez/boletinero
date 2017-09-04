@@ -1,89 +1,8 @@
 --- 
-titulo: ATAM / Boletín Octubre
-banner: http://extension.atamvirtual.com.ar/assets/headers2016/HEADER_OCTUBRE.jpg
+titulo: ATAM / Curso de Posgrado 
+banner: http://extension.atamvirtual.com.ar/assets/logos/2016-mm-logo-encabezado.gif
 pie: ""
 secciones: 
-  - 
-    titulo: Académica
-    bloques: 
-      - 
-        titulo: Sigue abierta la inscripción a la carrera de Artes Multimediales
-        link: http://multimedia.una.edu.ar/noticias/6236-nueva-fecha-de-inscripcion-a-la-carrera
-        contenido: |
-          Hasta el 11 de diciembre se encontrará abierta la inscripción a la carrera de Licenciatura en Artes Multimediales para el ciclo lectivo 2017.   
-          Además, durante este período se ofrecerán jornadas introductorias en los turnos mañana (10 hs.), tarde (14 hs.) y noche (18 hs.) para despejar dudas de ingresantes y dialogar sobre las Artes Multimediales.   
-          **+ info:** [http://multimedia.una.edu.ar/contenidos/2344-ingreso-2017]
-          (multimedia.una.edu.ar/contenidos/2344-ingreso-2017)
-  - 
-    titulo: Extensión
-    bloques: 
-      - 
-        titulo: Participación en “Jóvenes en primer plano”
-        link: http://multimedia.una.edu.ar/agenda/3349-jovenes-en-primer-plano
-        contenido: | 
-          En el marco de “Moreno Cine, Festival y Muestra Audiovisual”, el Área de Artes Multimediales será sede de “Jóvenes en primer plano”.   
-          En esta oportunidad, ATAM coordinará workshops y ofrecerá una muestra fotográfica, cine-debate e instalaciones interactivas, entre otras actividades, además de enviar a Moreno una selección de producciones audiovisuales desarrolladas en la carrera.   
-          El evento se realizará el miércoles 12 de octubre de 14 a 20 hs.en Av. Don Pedro de Mendoza 679, CABA.   
-          **+ info:** [http://multimedia.una.edu.ar/agenda/3349-jovenes-en-primer-plano](http://multimedia.una.edu.ar/agenda/3349-jovenes-en-primer-plano)
-      - 
-        titulo: ATAM presente en la Noche de los Museos
-        link: http://multimedia.una.edu.ar
-        contenido: |
-          Como todos los años, la UNA organiza en el Museo Ernesto de la Cárcova un conjunto de actividades para la Noche de los Museos. Este año se llevará a cabo el día sábado 29 de octubre a partir de las 18 hs.   
-          Una vez más, el Área Transdepartamental de Artes Multimediales estará presente exponiendo trabajos realizados durante la carrera,  seleccionados en diversas convocatorias a lo largo del corriente año.   
-          La puesta consistirá en una serie de instalaciones interactivas, obras objetuales, piezas audiovisuales, piezas sonoras y videojuegos (Arts - Game, Alt - Game y Not - Game). Estas tipologías y técnicas se expondrán de  manera integrada, generando un recorrido simple que espera mostrar las características de producción multi e interdisciplinares que se desarrollan en el Área.   
-          El evento también contará con la participación de graduados de la carrera, quienes intervendrán un sector de los jardines del museo.   
-      - 
-        titulo: Programa SPOTT
-        link: http://una.edu.ar/noticias/6389-la-una-participara-del-programa-spott
-        contenido: |
-          La Universidad Nacional de las Artes, a través de la Secretaría de Extensión Cultural y Bienestar Estudiantil, participa del Programa SPOTT, una propuesta de la Dirección Nacional de Formación Cultural, para la formación especializada de trabajadores/as de ramas técnicas del sector cultural público. Para ello, la UNA diseñó un conjunto de seminarios teórico-prácticos en las disciplinas iluminación, sonido y espacio conforme a los requerimientos del Ministerio de Cultura de la Nación.   
-          Durante los meses de septiembre, octubre, noviembre y diciembre en las sedes de Artes Multimediales y Artes Dramáticas (Venezuela), docentes de la Universidad Nacional de las Artes forman 90 técnicos de salas oficiales de todo el país.   
-          Los seminarios son coordinados por los docentes de la UNA Agustín Genoud (Sonido), Eli Sirlin (Iluminación) y Diego Sileano (Espacio).   
-          El Área de Artes Multimediales dictó hasta el momento los cursos de “Taller de producción audiovisual con interfaces MIDI”, a cargo del docente Lucas Jara; y “Puesta sonora de un proyecto escénico. Herramientas y Experimentación”, a cargo del  docente Marcelo Martínez.   
-  - 
-    titulo: Cursos Virtuales
-    intro : | 
-      El Área de Artes Multimediales ofrece una serie de cursos de extensión virtuales que pueden ser tomados en cualquier momento y desde cualquier computadora. Cuentan con un seguimiento minucioso durante su desarrollo, que incluye asesoramiento, asistencia y orientación permanente; y ofrece durante su cursada: foros de intercambio entre estudiantes y docentes, video-clases, ejercicios, evaluaciones y una amplia bibliografía digital.   
-      Se entregan certificados oficiales de la Universidad Nacional de las Artes y las inscripciones se encuentran abiertas hasta diciembre del 2016.
-    info: |
-      ###Informes   
-      Dirección de Extensión y Bienestar Estudiantil / Cursos | lunes a viernes 10 a 15hs    
-      Av. Don Pedro de Mendoza 679 | 4307­0622 int 106 | [multimedia.cursos@una.edu.ar](mailto:multimedia.cursos@una.edu.ar)
-    bloques: 
-      - 
-        titulo: Introducción a Processing
-        link: http://multimedia.una.edu.ar/extension/cursos/3039-introduccion-a-processing-2
-        contenido: | 
-          **Docente:** Sebastián Zavatarelli   
-          El curso es un acercamiento al entorno de programación Processing. Está destinado a artistas que quieran comenzar a utilizar las herramientas tecnológicas actuales para el desarrollo de sus obras. A lo largo del curso, los concurrentes aprenderán desde los más básicos conceptos de programación por computadora, hasta lograr el desarrollo de su propia obra a través de estas herramientas. También esta destinado a todo aquel que quiera iniciarse en la programación de computadoras a través de un entorno de programación simple, visual y accesible. Durante el curso se desarrollarán ejemplos prácticos con objetivo de fijar los conocimientos técnicos incorporados.   
-        info: | 
-          **Inicio:** Jueves 8 de octubre | **8 clases:** Jueves de 18 a 20hs | **Costo:** $1000 | [Inscripción](http://multimedia.una.edu.ar/contenidos/2458-inscripcion-a-curso)  
-      - 
-        titulo: Producción musical en Cubase
-        link: http://multimedia.una.edu.ar/extension/cursos/3041-produccion-musical-en-cubase
-        contenido: | 
-          **Docente:** Leandro Castillo   
-          Herramientas como Cubase y Nuendo son los programas mas utilizados en los home & Project Studios debido a su enorme versatilidad. En las últimas versiones estos programas han dado un salto increíble en calidad. Además cuentan con una enorme librería de samples, como también instrumentos virtuales, samplers, sintetizadores y procesadores que los convierten en una verdadero estación central de trabajo. El curso se divide en 8 módulos, estos consisten en imágenes, textos y videos explicativos que van afianzando en el alumno terminologías, conceptos y habilidades para el uso no solo del software sino también de los equipos y procesos utilizados en el espectáculo musical.   
-        info: |
-          **Inicio:** Jueves 8 de octubre | **8 clases:** Jueves de 18 a 20hs | **Costo:** $1000 | [Inscripción](http://multimedia.una.edu.ar/contenidos/2458-inscripcion-a-curso)
-      - 
-        titulo: Introducción a Ableton Live
-        link: http://multimedia.una.edu.ar/extension/cursos/3037-introduccion-ableton-live
-        contenido: |
-          **Docente:** Leandro Castillo   
-          Creación de música por computadoras en estudio y en tiempo real.   
-          El curso se divide en 8 módulos, estos, consisten en imágenes, textos y videos explicativos que van afianzando en el alumno terminologías, conceptos y habilidades para el uso no solo del software sino también de los equipos y procesos utilizados en el espectáculo musical. El alumno podrá desarrollar su creatividad a medida que avanza en sus conocimientos técnicos a través de nuevos lenguajes y herramientas que son la base fundamental para el desarrollo de las modernas producciones musicales.   
-        info: | 
-          **Inicio:** Jueves 8 de octubre | **8 clases:** Jueves de 18 a 20hs | **Costo:** $1000 | [Inscripción](http://multimedia.una.edu.ar/contenidos/2458-inscripcion-a-curso)    
-      - 
-        titulo: Introducción Arduino
-        link: http://multimedia.una.edu.ar/extension/cursos/3038-introduccion-a-arduino
-        contenido: | 
-          **Docente:** Sebastián Zavatarelli   
-          El curso es un acercamiento a la Computación Física a través de la placa Arduino, siendo esta una plataforma de electrónica abierta para la creación de prototipos basada en software y hardware flexibles y fáciles de usar. El curso está dirigido a Artistas, Hobbistas y emprendedores tecnológicos sin conocimientos previos de electrónica o programación. Durante el curso se desarrollarán ejemplos prácticos con objetivo de fijar los conocimientos técnicos incorporados.   
-        info: | 
-          **Inicio:** Jueves 8 de octubre | **8 clases:** Jueves de 18 a 20hs | **Costo:** $1000 | [Inscripción](http://multimedia.una.edu.ar/contenidos/2458-inscripcion-a-curso)
   - 
     titulo: Cursos de Posgrado
     intro: |
@@ -95,24 +14,10 @@ secciones:
       Av. Don Pedro de Mendoza 679 | 4307­0622 int 107 | [multimedia.posgrado@una.edu.ar](mailto:multimedia.posgrado@una.edu.ar)
     bloques: 
       - 
-        titulo: Programación en SuperCollider
-        link: http://multimedia.una.edu.ar/posgrados/cursos/3064-programacion-en-supercollider-modelizacion-informatica-del-sonido-y-la-musica-en-la-creacion-artistica
-        contenido: | 
-          Modelización informática del sonido y la música en la creación artística.   
-          **Docentes:** Lucas Samaruga
-        info: | 
-          **Inicio:** Miércoles 19 de octubre | [Inscripción](mailto:multimedia.posgrado@una.edu.ar)
-      - 
         titulo: Dibujo en escena
         link: http://multimedia.una.edu.ar/posgrados/cursos/3063-dibujo-en-escena
         contenido: | 
           **Docentes:** Marcela Rapallo
-        info: | 
-          **Inicio:** Jueves 20 de octubre | [Inscripción](mailto:multimedia.posgrado@una.edu.ar)
-      - 
-        titulo: Introducción a la programación para el arte interactivo y la escena
-        link: http://multimedia.una.edu.ar/posgrados/cursos/3062-introduccion-a-la-programacion-para-el-arte-interactivo-y-la-escena
-        contenido: | 
-          **Docentes:** Federico Joselevich
+          **Destinatarios:** 
         info: | 
           **Inicio:** Jueves 20 de octubre | [Inscripción](mailto:multimedia.posgrado@una.edu.ar)
